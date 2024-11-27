@@ -1,0 +1,12 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "This project highlights my journey and growth as a web developer, showcasing a variety of skills in HTML, CSS, and JavaScript. The portfolio is a reflection of my learning process, encompassing the essential building blocks of web development and creative design.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
