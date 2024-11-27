@@ -50,50 +50,56 @@ main {
 /*--------------------------------------*/
 /*           Header                     */
 /*--------------------------------------*/
+header{
+    height: 45px;
+}
 
-.hero {
-    width: 100%;
-    height: 100svh;
-    background: url('../img/background.jpg');
-    background-size: cover;
-    
+.logo {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+}
 
-    .logo {
-        max-height: 80px;
-    }
+nav {              
+    list-style: none;
+    padding: 18px 0;
+}
 
-    nav {        
-        align-items: center;        
-        list-style: none;
-        padding: 30px 0;
-    }
+ul li{
+    display: inline-block; 
+    font-variant: tabular-nums;
+}
 
-    ul li{
-        display: inline-block; 
-    }
+.menu {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--app-lightgray);
+    padding: 5px 10px;
+    border-radius: 25px;
+}
 
-    .menu {
-        font-size: 18px;
-        font-weight: 500;
-        text-decoration: none;
-        color: var(--app-lightgray);
-        margin-left: 30px;
-    }
-
-    .menu:hover{
-        color: var(--app-blue);
-        font-size: 18px;
-        font-weight: 500;
-        background-color: var(--app-lightgray);
-        border-radius: 25px;
-        padding: 5px 10px;
-        transition: all 0.5s ease-in-out;
-    }
+.menu:hover{
+    color: var(--app-blue);
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--app-lightgray);
+    border-radius: 25px;
+    padding: 5px 10px;
+    transition: all 0.5s ease-in-out;
 }
 
 /*--------------------------------------*/
 /*           Hero Banner                */
 /*--------------------------------------*/
+
+.hero {
+    width: 100%;
+    height: 100svh;
+    background: url('../img/background.jpg');
+    background-size: cover;  
+}
 
 .hero-content {
     
@@ -109,30 +115,13 @@ main {
         font-size: 20px;
         font-weight: 400;
         color: var(--app-yellow);
-    }
-
-    .icon {
-        font-size: 40px;
-        color: var(--app-white);
-        padding-right: 30px;
-
-        i {
-            padding-top: 60px;
-        }
-    }
-
-    .icon:hover{
-        color: var(--app-yellow);
-        transition: all 0.25s ease-in-out;
-    }
-     
+    }    
 } 
 
 .row {
     margin-top: 20px;
     gap: 20px;
     flex-wrap: wrap;
-    
 }
 
 .col {
@@ -277,86 +266,30 @@ main {
 /*               Footer                 */
 /*--------------------------------------*/
 
-footer {   
-    padding: 30px 0 80px 0;
-      
-    h1 {
-        line-height: 70px;
-        font-size: 50px;
-        font-weight: 500;
-        color: var(--app-yellow);
-        text-align: center;
-        padding: 70px 0;
-        border: none;
-        border-top: 2px solid var(--app-yellow); 
-        margin: 20px 0; 
-    }
-
-    h2 {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 30px;
-        color: var(--app-white);
-    }
-
-    p {
-        line-height: 30px;
-        font-size: 20px;
+footer { 
+    background-color: var(--app-lightgray);
+    margin-top: 20px;  
+    
+        p {
+        font-size: 17px;
         font-weight: 400;
-        padding: 10px 0 0 0;
-        color: var(--app-white);
-        }
-
-        a {
-            font-size: 20px;
-            font-weight: 400;
-            line-height: 30px;
-            text-decoration: none;
-            color: var(--app-blue);
-            transition: all 0.25s ease-in-out;
-            background-color: transparent;
-        }
-        
-        .email:hover {
-            color: var(--app-lightgray);
+        padding: 10px;
+        color: black;
         }
 
         .icon {
-            font-size: 40px;
-            color: var(--app-white);
-            padding-right: 30px;
+            font-size: 20px;
+            color: black;
     
             i {
-                padding-top: 60px;
+                padding: 15px 10px 0px 0px ;
             }
         }
     
         .icon:hover{
-            color: var(--app-yellow);
-            transition: all 0.5s ease-in-out;
+            color: var(--app-blue);
+            transition: all 0.25s ease-in-out;
         }
-}
-.back-home {
-    position: fixed;
-    inset: auto 20px 20px auto;
-    width: 70px;
-    height: 70px;
-    background-color: transparent;
-
-    a { 
-        font-size: 40px;
-        color:var(--app-yellow);
-        line-height: 65px;
-        text-align: center;
-    }
-    a:hover{
-        font-size: 45px;
-        color: var(--app-lightgray);
-        line-height: 65px;
-        text-align: center;
-        background-color: transparent;
-        transition: all 0.3s ease-in-out;
-    }
 }
 
 
