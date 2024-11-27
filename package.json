@@ -1,13 +1,19 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
-  "description": "This project highlights my journey and growth as a web developer, showcasing a variety of skills in HTML, CSS, and JavaScript. The portfolio is a reflection of my learning process, encompassing the essential building blocks of web development and creative design.",
+  "description": "Project developed by MITT Soft Developer students",
   "main": "index.js",
   "scripts": {
     "start": "lite-server"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JAvaScript",
+    "JSON",
+    "Web Development"
+  ],
+  "author": "Douglas Santiago",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1"
