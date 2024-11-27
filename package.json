@@ -4,9 +4,12 @@
   "description": "This project highlights my journey and growth as a web developer, showcasing a variety of skills in HTML, CSS, and JavaScript. The portfolio is a reflection of my learning process, encompassing the essential building blocks of web development and creative design.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "lite-server"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
