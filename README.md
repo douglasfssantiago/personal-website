@@ -1,10 +1,10 @@
-# Portfolio
+# Personal Webpage
+![](./assets/img/readme1.png)
 
 This project highlights my journey and growth as a web developer, showcasing a variety of skills in HTML, CSS, and JavaScript. The portfolio is a reflection of my learning process, encompassing the essential building blocks of web development and creative design.
 
-Visit the website [here](https://douglasfssantiago.github.io/student-portfolio/)
+Visit the website [here](https://douglasfssantiago.github.io/personal-website/)
 
-![](./assets/img/readme1.png)
 
 ## Features 
 
@@ -23,8 +23,7 @@ media queries, and more.
 * Interactive Elements: Forms, buttons, and other elements to enhance user 
 interaction.
 
-![](./assets/img/readme2.png)
- 
+
 ## Get Started
 
 **To get started locally:**
@@ -32,9 +31,10 @@ interaction.
 Clone this repo:
 
 ```bash
-git clone https://github.com/douglasfssantiago/student-portfolio.git
-cd portifolio
+git clone https://github.com/douglasfssantiago/personal-website.git
+cd personal-website
 ```
+
 Explore the different files.
 
 Select the index.html file.
@@ -43,6 +43,4 @@ Do right-click and select the `Reveal in File Explorer` menu.
 
 Double-click on file index.html.
 
-Through the top menu, you can navegate to the other web pages, such as 
-About us and Contact us:
 <br/>
