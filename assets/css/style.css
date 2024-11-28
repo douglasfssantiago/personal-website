@@ -150,7 +150,6 @@ ul li{
 /*           Introduction               */
 /*--------------------------------------*/
 .intro {
-    border-top: 2px solid var(--app-yellow);
     
     h1 {
         line-height: 70px;
@@ -160,7 +159,6 @@ ul li{
         text-align: center;
         padding: 60px 0;
         border: none;
-        border-top: 2px solid var(--app-yellow); 
         margin: 20px 0; 
     }
     
@@ -192,7 +190,6 @@ ul li{
 
     img {
         border-radius: 10px;
-
     }
 
     .text {
@@ -222,20 +219,20 @@ ul li{
 /*               My Projects            */
 /*--------------------------------------*/
 .my-projects {
-
-    color: var(--app-yellow);
+    background-color: var(--app-lightgray);
+    color: var(--app-blue);
     text-align: center;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
     
 
     h1 {
-        line-height: 70px;
+        line-height: 60px;
         font-size: 50px;
         font-weight: 500;
         text-align: center;
-        padding: 60px 0 0 0;
-        border: none;
-        border-top: 2px solid var(--app-yellow); 
-        margin: 20px 0; 
+        padding: 30px 0 0 0;
+        border: none;    
     }
 
     h2 {
@@ -246,24 +243,90 @@ ul li{
     }
 
     p {
-        line-height: 30px;
-        font-size: 20px;
-        font-weight: 400;
+        line-height: 35px;
+        font-size: 25px;
+        font-weight: 500;
         padding: 30px 0;
     }
 
-    a {
+    .re-link {
         font-size: 20px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 30px;
         text-decoration: none;
         color: var(--app-white);
         transition: all 0.25s ease-in-out;
-        background-color: transparent;
+        background-color: var(--app-blue);
+        border-radius: 5px;
+        padding: 8px 10px 10px 10px;
+    }
+    .re-link:hover {
+        background-color: var(--app-dark-gray);
+    }
+    .text {
+        padding-bottom: 30px;
+    }
+}
+
+/*--------------------------------------*/
+/*                 Contact              */
+/*--------------------------------------*/
+
+.contact-section {
+    
+    h1 {
+        line-height: 70px;
+        font-size: 50px;
+        font-weight: 500;
+        color: var(--app-yellow);
+        text-align: center;
+        padding: 0px 0px;
+        border: none;
+        margin: 20px 0; 
     }
     
-    .re-link:hover {
-        color: var(--app-blue);
+}
+
+.contact-txt {
+    color: var(--app-white);
+
+    h2 {
+        line-height: 50px;
+        font-size: 40px;
+        font-weight: 600;
+        padding: 0px 0px;
+    }
+
+    h3 {
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0 0px;
+    }
+
+    .text {
+         
+    }
+
+    .picture {
+        place-items: left;
+        
+    }
+
+    .icon {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        text-decoration: none;
+        color: var(--app-white);
+        transition: all 0.25s ease-in-out;
+        background-color: var(--app-blue);
+        border-radius: 5px;
+        padding: 8px 10px 10px 10px;
+        margin-right: 20px;
+    }
+    .icon:hover {
+        background-color: var(--app-dark-gray);
     }
 }
 
