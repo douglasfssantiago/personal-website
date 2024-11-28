@@ -94,19 +94,20 @@ ul li{
 /*           Hero Banner                */
 /*--------------------------------------*/
 .hero {
-    position: relative;
+    
     width: 100%;
     height: calc(70vh - 60px);
     background: url('../img/background.jpg');
     background-size: cover center;  
     text-align: center;
     align-content: center;
+    align-content: center;
     overflow: hidden;
 }
 
 .hero-content {
-    text-align: center;
-    align-items: center;
+   text-align: center;
+   align-items: center;
     
     h1 {
         line-height: 70px;
@@ -149,20 +150,7 @@ ul li{
 /*--------------------------------------*/
 /*           Introduction               */
 /*--------------------------------------*/
-.intro {
-    
-    h1 {
-        line-height: 70px;
-        font-size: 50px;
-        font-weight: 500;
-        color: var(--app-yellow);
-        text-align: center;
-        padding: 60px 0;
-        border: none;
-        margin: 20px 0; 
-    }
-    
-}
+
 
 .intro-txt {
     color: var(--app-white);
@@ -193,25 +181,17 @@ ul li{
     }
 
     .text {
-        background-color: var(--app-dark-gray-transp);
-        border: 1px solid var(--app-dark-gray);
+        background-color: rgb(48, 47, 47);
         border-radius: 10px;
-        box-shadow: 1px 1px 1px var(--app-lightgray);    
-    }
-
-    .text:hover{
-        color: var(--app-white);
-        background-color: var(--app-dark-gray);
-        transition:  0.25s ease-in-out;
     }
 
     .picture {
-        border: 1px solid var(--app-dark-gray);
+        
         border-radius: 10px;
         background-color: var(--app-lightgray);
         display: grid;
         place-items: center;
-        box-shadow: 1px 1px 1px var(--app-lightgray);
+        
     }
 }
 
@@ -219,8 +199,8 @@ ul li{
 /*               My Projects            */
 /*--------------------------------------*/
 .my-projects {
-    background-color: var(--app-lightgray);
-    color: var(--app-blue);
+    background-color: #b37400;
+    color: var(--app-dark-background);
     text-align: center;
     width: 100%;
     margin: 20px 0px 20px 0px;
@@ -254,14 +234,14 @@ ul li{
         font-weight: 500;
         line-height: 30px;
         text-decoration: none;
-        color: var(--app-white);
+        color: var(--app-dark-background);
         transition: all 0.25s ease-in-out;
-        background-color: var(--app-blue);
+        background-color: #ffcf4d;
         border-radius: 5px;
         padding: 8px 10px 10px 10px;
     }
     .re-link:hover {
-        background-color: var(--app-dark-gray);
+        background-color: #e4e477;
     }
     .text {
         padding-bottom: 30px;
@@ -275,12 +255,12 @@ ul li{
 .contact-section {
     
     h1 {
-        line-height: 70px;
+        line-height: 55px;
         font-size: 50px;
         font-weight: 500;
         color: var(--app-yellow);
         text-align: center;
-        padding: 0px 0px;
+        
         border: none;
         margin: 20px 0; 
     }
@@ -294,7 +274,7 @@ ul li{
         line-height: 50px;
         font-size: 40px;
         font-weight: 600;
-        padding: 0px 0px;
+        padding: 20px 0px;
     }
 
     h3 {
@@ -304,13 +284,9 @@ ul li{
         padding: 0 0px;
     }
 
-    .text {
-         
-    }
-
     .picture {
         place-items: left;
-        
+        padding: 30px 0px; 
     }
 
     .icon {
