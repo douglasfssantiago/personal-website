@@ -51,7 +51,8 @@ main {
 /*           Header                     */
 /*--------------------------------------*/
 header{
-    height: 45px;
+    height: 60px;
+    overflow: hidden;
 }
 
 .logo {
@@ -59,69 +60,74 @@ header{
     color: #fff;
     font-weight: 500;
     letter-spacing: 2.5px;
+    padding-top: 15px;
 }
 
 nav {              
     list-style: none;
-    padding: 18px 0;
 }
 
 ul li{
     display: inline-block; 
     font-variant: tabular-nums;
+    padding-top: 15px;
 }
 
 .menu {
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
-    color: var(--app-lightgray);
-    padding: 5px 10px;
-    border-radius: 25px;
+    color: white;
+    padding-left: 20px;
+    
 }
 
 .menu:hover{
-    color: var(--app-blue);
+    color: #88aef5;
     font-size: 18px;
     font-weight: 500;
-    background-color: var(--app-lightgray);
-    border-radius: 25px;
-    padding: 5px 10px;
-    transition: all 0.5s ease-in-out;
+    padding-left: 20px;
+    transition: all 0.25s ease-in-out;
 }
 
 /*--------------------------------------*/
 /*           Hero Banner                */
 /*--------------------------------------*/
-
 .hero {
+    position: relative;
     width: 100%;
-    height: 100svh;
+    height: calc(70vh - 60px);
     background: url('../img/background.jpg');
-    background-size: cover;  
+    background-size: cover center;  
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
 }
 
 .hero-content {
+    text-align: center;
+    align-items: center;
     
     h1 {
         line-height: 70px;
-        font-size: 50px;
-        font-weight: 300;
-        color: var(--app-yellow);
+        font-size: 40px;
+        font-weight: 500;
+        color: #88aef5;
+        padding: 30px 0px 0px 0px;
     }
 
     p {
         line-height: 30px;
         font-size: 20px;
         font-weight: 400;
-        color: var(--app-yellow);
+        color: #88aef5;
     }    
 } 
 
 .row {
     margin-top: 20px;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
 }
 
 .col {
@@ -144,7 +150,7 @@ ul li{
 /*           Introduction               */
 /*--------------------------------------*/
 .intro {
-    
+    border-top: 2px solid var(--app-yellow);
     
     h1 {
         line-height: 70px;
@@ -184,6 +190,11 @@ ul li{
         padding: 30px 30px 30px 30px;
     }
 
+    img {
+        border-radius: 10px;
+
+    }
+
     .text {
         background-color: var(--app-dark-gray-transp);
         border: 1px solid var(--app-dark-gray);
@@ -213,6 +224,8 @@ ul li{
 .my-projects {
 
     color: var(--app-yellow);
+    text-align: center;
+    
 
     h1 {
         line-height: 70px;
@@ -238,27 +251,19 @@ ul li{
         font-weight: 400;
         padding: 30px 0;
     }
-    .picture img {
-        border: 1px solid var(--app-dark-gray);
-        border-radius: 10px;
-        background-color: var(--app-lightgray);
-        display: grid;
-        place-items: center;
-        box-shadow: 1px 1px 1px var(--app-lightgray);
-    }
 
     a {
         font-size: 20px;
         font-weight: 400;
         line-height: 30px;
         text-decoration: none;
-        color: var(--app-blue);
+        color: var(--app-white);
         transition: all 0.25s ease-in-out;
         background-color: transparent;
     }
     
     .re-link:hover {
-        color: var(--app-lightgray);
+        color: var(--app-blue);
     }
 }
 
@@ -268,52 +273,27 @@ ul li{
 
 footer { 
     background-color: var(--app-lightgray);
-    margin-top: 20px;  
+    margin-top: 20px;
+    height: 45px; 
     
-        p {
+    p {
         font-size: 17px;
         font-weight: 400;
         padding: 10px;
         color: black;
-        }
+    }
 
-        .icon {
-            font-size: 20px;
-            color: black;
-    
-            i {
-                padding: 15px 10px 0px 0px ;
-            }
+    .icon {
+        font-size: 20px;
+        color: black;
+
+        i {
+            padding: 15px 10px 0px 0px ;
         }
-    
-        .icon:hover{
-            color: var(--app-blue);
-            transition: all 0.25s ease-in-out;
-        }
+    }
+
+    .icon:hover{
+        color: var(--app-blue);
+        transition: all 0.25s ease-in-out;
+    }
 }
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-    
-    
-   
-
-
-
-
-
-
-
-
