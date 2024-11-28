@@ -8,11 +8,14 @@
     --app-dark-background: #1a1d28;
     --app-lightgray: #c3c3c3;
     --app-blue: #2e3aec;
-    --app-yellow: #e6e600;
+    --app-light-blue: #88aef5;
+    --app-orange: #b37400;
+    --app-banner: #d1dff8;
     --app-white: #fff;
-    --app-dark-gray-transp: #8080809c;
+    --app-gray: #302f2f;
     --app-dark-gray: #808080;
-    
+    --app-yellow:#ffcf4d;
+    --app-light-yellow:#e4e477;
 }
 
 html {
@@ -46,6 +49,15 @@ main {
     flex-direction: column;
 }
 
+.row {
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;  
+}
+
+.col {
+    width: calc(50% - 10px);
+}
 
 /*--------------------------------------*/
 /*           Header                     */
@@ -57,9 +69,9 @@ header{
 
 .logo {
     font-size: 20px;
-    color: #fff;
+    color: var(--app-white);
     font-weight: 500;
-    letter-spacing: 2.5px;
+    letter-spacing: 1.5px;
     padding-top: 15px;
 }
 
@@ -77,13 +89,12 @@ ul li{
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
-    color: white;
+    color: var(--app-white);
     padding-left: 20px;
-    
 }
 
 .menu:hover{
-    color: #88aef5;
+    color: var(--app-light-blue);
     font-size: 18px;
     font-weight: 500;
     padding-left: 20px;
@@ -97,10 +108,8 @@ ul li{
     
     width: 100%;
     height: calc(70vh - 60px);
-    background: url('../img/background.jpg');
+    background: url('../img/bg-2.png');
     background-size: cover center;  
-    text-align: center;
-    align-content: center;
     align-content: center;
     overflow: hidden;
 }
@@ -113,44 +122,23 @@ ul li{
         line-height: 70px;
         font-size: 40px;
         font-weight: 500;
-        color: #88aef5;
+        color: var(--app-banner);
         padding: 30px 0px 0px 0px;
     }
 
     p {
         line-height: 30px;
         font-size: 20px;
-        font-weight: 400;
-        color: #88aef5;
+        font-weight: 500;
+        color: var(--app-banner);
     }    
 } 
 
-.row {
-    margin-top: 20px;
-    gap: 20px;
-    flex-wrap: wrap;  
-}
 
-.col {
-    width: calc(50% - 10px);
-}
-
-@media screen and (max-width: 768px) {
-    .one, .two {
-        width: calc(100% - 10px);   
-    }
-}    
-
-@media screen and (max-width: 480px) {
-    .col {
-        width: 100%;   
-    }
-}
 
 /*--------------------------------------*/
 /*           Introduction               */
 /*--------------------------------------*/
-
 
 .intro-txt {
     color: var(--app-white);
@@ -181,7 +169,7 @@ ul li{
     }
 
     .text {
-        background-color: rgb(48, 47, 47);
+        background-color: var(--app-gray);
         border-radius: 10px;
     }
 
@@ -198,8 +186,9 @@ ul li{
 /*--------------------------------------*/
 /*               My Projects            */
 /*--------------------------------------*/
+
 .my-projects {
-    background-color: #b37400;
+    background-color: var(--app-orange);
     color: var(--app-dark-background);
     text-align: center;
     width: 100%;
@@ -229,20 +218,22 @@ ul li{
         padding: 30px 0;
     }
 
-    .re-link {
+    .repo-link {
         font-size: 20px;
         font-weight: 500;
         line-height: 30px;
         text-decoration: none;
         color: var(--app-dark-background);
         transition: all 0.25s ease-in-out;
-        background-color: #ffcf4d;
+        background-color: var(--app-yellow);
         border-radius: 5px;
         padding: 8px 10px 10px 10px;
     }
-    .re-link:hover {
-        background-color: #e4e477;
+
+    .repo-link:hover {
+        background-color: var(--app-light-yellow);
     }
+
     .text {
         padding-bottom: 30px;
     }
@@ -251,21 +242,6 @@ ul li{
 /*--------------------------------------*/
 /*                 Contact              */
 /*--------------------------------------*/
-
-.contact-section {
-    
-    h1 {
-        line-height: 55px;
-        font-size: 50px;
-        font-weight: 500;
-        color: var(--app-yellow);
-        text-align: center;
-        
-        border: none;
-        margin: 20px 0; 
-    }
-    
-}
 
 .contact-txt {
     color: var(--app-white);
@@ -284,7 +260,7 @@ ul li{
         padding: 0 0px;
     }
 
-    .picture {
+    .contact-link {
         place-items: left;
         padding: 30px 0px; 
     }
@@ -317,14 +293,14 @@ footer {
     
     p {
         font-size: 17px;
-        font-weight: 400;
+        font-weight: 500;
         padding: 10px;
-        color: black;
+        color: var(--app-dark-background);
     }
 
     .icon {
         font-size: 20px;
-        color: black;
+        color: var(--app-dark-background);
 
         i {
             padding: 15px 10px 0px 0px ;
@@ -334,5 +310,21 @@ footer {
     .icon:hover{
         color: var(--app-blue);
         transition: all 0.25s ease-in-out;
+    }
+}
+
+/*--------------------------------------*/
+/*               Responsivity           */
+/*--------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    .one, .two {
+        width: calc(100% - 10px);   
+    }
+}    
+
+@media screen and (max-width: 480px) {
+    .col {
+        width: 100%;   
     }
 }
